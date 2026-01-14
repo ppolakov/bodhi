@@ -4,13 +4,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bodhi.client.bindings &#8212; bodhi 25.5.1 documentation</title>
+    <title>bodhi.client.bindings &#8212; bodhi 25.11.2 documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../../_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css?v=1f462c57" />
-    <script src="../../../_static/documentation_options.js?v=3e341cb2"></script>
-    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/documentation_options.js?v=cfbee1d0"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
    
@@ -91,13 +91,13 @@
 
 
 <span class="k">if</span> <span class="n">typing</span><span class="o">.</span><span class="n">TYPE_CHECKING</span><span class="p">:</span>  <span class="c1"># pragma: no cover</span>
-    <span class="kn">import</span><span class="w"> </span><span class="nn">munch</span>  <span class="c1"># noqa: 401</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">munch</span>  <span class="c1"># noqa: F401</span>
 
 
 <span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
 
-<span class="n">UPDATE_ID_RE</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;FEDORA-(EPEL-)?\d{4,4}&#39;</span>
+<span class="n">UPDATE_ID_RE</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;FEDORA-(EPEL-|FLATPAK-)?\d{4,4}&#39;</span>
 <span class="n">UPDATE_TITLE_RE</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(\.el|\.fc)\d\d?&#39;</span>
 
 
@@ -1237,10 +1237,10 @@
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &#169;2007-2025, Red Hat, Inc..
+      &#169;2007-2026, Red Hat, Inc..
       
       |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.1.0</a>
       &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
       
     </div>
